@@ -1,0 +1,19 @@
+@keyframes intro-default {
+  0% {
+    color: map-get($theme-default, background);
+  }
+  100% {
+    color: map-get($theme-default, ui);
+  }
+}
+
+.theme--default {
+  --color-background: #{map-get($theme-default, background)};
+  --color-accent: #{map-get($theme-default, accent)};
+  --color-ui: #{map-get($theme-default, ui)};
+  --color-shadow: rgba(201, 48, 0, 0.1);
+
+  .title__head {
+    animation-name: intro-default;
+  }
+}

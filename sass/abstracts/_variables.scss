@@ -1,0 +1,116 @@
+/* Colors */
+
+$theme-default: (
+  background: #dac1b3,
+  ui: #b13710,
+  accent: #ffffff,
+);
+
+$color-black: #000000;
+
+/* Font */
+$font-family-base: "GT Alpina", "Baskerville", "Caslon", serif;
+$font-family-alt: "Work Sans", sans-serif;
+$font-family-decoration: "Libre Baskerville", "Baskerville", "Caslon",
+  "Garamond", serif;
+
+/* Font Size */
+$font-size-heading-1: (
+  null: 12vw,
+  md: 8vw,
+);
+$font-size-heading-2: (
+  null: 13vw,
+  md: 5vw,
+);
+$font-size-heading-3: (
+  null: 12vw,
+  md: 2.5rem,
+);
+$font-size-heading-4: (
+  null: 2rem,
+  md: 2.25rem,
+);
+$font-size-paragraph: (
+  null: 1.75rem,
+  md: 1.75rem,
+);
+$font-size-paragraph-small: (
+  null: 1.25rem,
+  md: 1.25rem,
+);
+$font-size-paragraph-xsmall: (
+  null: 1rem,
+  md: 1rem,
+);
+$font-size-paragraph-xxsmall: (
+  null: 0.875rem,
+  md: 0.875rem,
+);
+
+$font-size-main-button: (
+  null: 2.5rem,
+  md: 2.5rem,
+);
+
+$line-height-heading-1: 1;
+$line-height-heading-2: 1;
+$line-height-heading-3: 1.2;
+$line-height-heading-4: 1.2;
+$line-height-paragraph: 1.33;
+
+$letter-spacing-heading: -0.05em;
+$letter-spacing-body: -0.025em;
+$letter-spacing-eyebrow: 0.05em;
+
+$font-size-link: (
+  null: 1.125rem,
+);
+
+/* Line height */
+$line-height-paragraph-large: 1.333333;
+
+/* Font weight */
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 800;
+
+/* Component Sizing */
+$link-button-size-md: 6.25rem;
+
+/* Grid */
+$grid-outer-padding: 1.5rem;
+
+/* Animation */
+$animation-delay-base: 0.8s;
+$animation-duration-background: 1s;
+$animation-duration-line: 1.5s;
+$animation-easing-line: cubic-bezier(0.29, 0.135, 0.055, 1);
+$animation-delay-background: 2s;
+$animation-delay-paragraph: 2.1s;
+$animation-delay-links: 3s;
+
+/* Transitions */
+$ease-in-quad: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+$ease-in-cubic: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+$ease-in-quart: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+$ease-in-quint: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+$ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+$ease-out-cubic: cubic-bezier(0.215, 0.61, 0.355, 1);
+$ease-out-quart: cubic-bezier(0.165, 0.84, 0.44, 1);
+$ease-out-quint: cubic-bezier(0.23, 1, 0.32, 1);
+$ease-out-back: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+$ease-out-back-smooth: cubic-bezier(
+  0.3,
+  1.65,
+  0.4,
+  1
+); // Custom smoother transition
+$ease-out-back-hard: cubic-bezier(0.3, 1.65, 0.7, 1.65);
+$ease-in-out-quad: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+$ease-in-out-cubic: cubic-bezier(0.645, 0.045, 0.355, 1);
+$ease-in-out-quart: cubic-bezier(0.77, 0, 0.175, 1);
+$ease-in-out-quint: cubic-bezier(0.86, 0, 0.07, 1);
+$ease-in-out-back: cubic-bezier(0.68, -0.55, 0.265, 1.55);

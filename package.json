@@ -1,0 +1,39 @@
+{
+  "name": "christianreindl",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "autoprefixer": "postcss -u autoprefixer -r css*//*.css",
+    "scss": "node-sass --output-style compressed sass -o css",
+    "uglify": "terser js/main.js --compress --mangle -o js/main.min.js",
+    "serve": "browser-sync start --server --files \"css*//*.css, js*//*.js\"",
+    "build:css": "npm run scss && npm run autoprefixer",
+    "build:js": "npm run uglify",
+    "build:all": "npm run build:css && npm run build:js",
+    "watch:css": "onchange \"sass\" -- npm run build:css",
+    "watch:js": "onchange \"js\" -- npm run build:js",
+    "watch:all": "npm-run-all -p serve watch:css watch:js",
+    "start": "npm run build:all && npm run watch:all"
+  },
+  "author": "Christian Reindl",
+  "license": "ISC",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^6.4.0",
+    "autoprefixer": "^10.4.14",
+    "browser-sync": "^2.29.3",
+    "node-sass": "^9.0.0",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^7.1.0",
+    "postcss-cli": "^10.1.0",
+    "terser": "^5.18.1"
+  },
+  "browserslist": [
+    "> 5%",
+    "> 1% in US",
+    "iOS >= 8",
+    "Last 2 versions"
+  ],
+  "dependencies": {
+    "bootstrap": "^5.3.0"
+  }
+}

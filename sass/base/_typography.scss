@@ -1,0 +1,97 @@
+body {
+  font-family: $font-family-base;
+  // font-size: $font-size-base;
+  font-weight: $font-weight-regular;
+
+  text-rendering: geometricPrecision;
+  -moz-text-rendering: geometricPrecision;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+i {
+  font-style: italic;
+}
+
+em {
+  font-family: $font-family-decoration;
+}
+
+b {
+  font-weight: $font-weight-semibold;
+}
+
+.heading--1,
+.heading--2,
+.heading--3,
+.heading--4 {
+  font-family: $font-family-base;
+  letter-spacing: $letter-spacing-heading;
+  font-weight: $font-weight-light;
+}
+
+.paragraph,
+.paragraph--small,
+.paragraph--xsmall {
+  font-family: $font-family-alt;
+  letter-spacing: $letter-spacing-body;
+  font-weight: $font-weight-medium;
+}
+
+.heading--1 {
+  @include font-size($font-size-heading-1);
+  line-height: $line-height-heading-1;
+}
+
+.heading--2 {
+  @include font-size($font-size-heading-2);
+  line-height: $line-height-heading-2;
+}
+
+.heading--3 {
+  @include font-size($font-size-heading-3);
+  line-height: $line-height-heading-3;
+}
+
+.heading--4 {
+  @include font-size($font-size-heading-4);
+  line-height: $line-height-heading-4;
+}
+
+.paragraph {
+  @include font-size($font-size-paragraph);
+  line-height: $line-height-paragraph;
+}
+
+.paragraph--small {
+  @include font-size($font-size-paragraph-small);
+  line-height: $line-height-paragraph;
+}
+
+.paragraph--xsmall {
+  @include font-size($font-size-paragraph-xsmall);
+  line-height: $line-height-paragraph;
+}
+
+.intro__button {
+  font-family: $font-family-base;
+  letter-spacing: $letter-spacing-heading;
+  font-weight: $font-weight-light;
+  @include font-size($font-size-main-button);
+  line-height: $line-height-heading-3;
+}
+
+.eyebrow {
+  @include font-size($font-size-paragraph-xxsmall);
+  font-family: $font-family-alt;
+  letter-spacing: $letter-spacing-eyebrow;
+  font-weight: $font-weight-semibold;
+  text-transform: uppercase;
+  line-height: $line-height-paragraph;
+}
+
+.links {
+  font-family: $font-family-alt;
+  @include font-size($font-size-link);
+}

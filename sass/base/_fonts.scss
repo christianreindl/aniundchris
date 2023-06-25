@@ -1,0 +1,97 @@
+$font-path: "../webfonts/";
+
+@font-face {
+  font-family: "GT Alpina";
+  src: url($font-path + "gt-alpina-light.woff2") format("woff2");
+  font-weight: $font-weight-light;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "GT Alpina";
+  src: url($font-path + "gt-alpina-light-italic.woff2") format("woff2");
+  font-weight: $font-weight-light;
+  font-style: italic;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "GT Alpina";
+  src: url($font-path + "gt-alpina-regular.woff2") format("woff2");
+  font-weight: $font-weight-regular;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "GT Alpina";
+  src: url($font-path + "gt-alpina-regular-italic.woff2") format("woff2");
+  font-weight: $font-weight-regular;
+  font-style: italic;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url($font-path + "inter-regular.woff2") format("woff2");
+  font-weight: $font-weight-regular;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url($font-path + "inter-medium.woff2") format("woff2");
+  font-weight: $font-weight-medium;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url($font-path + "inter-semibold.woff2") format("woff2");
+  font-weight: $font-weight-semibold;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "Libre Baskerville";
+  src: url($font-path + "libre-baskerville.ttf") format("ttf");
+  font-weight: $font-weight-regular;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "Libre Baskerville";
+  src: url($font-path + "libre-baskerville-italic.ttf") format("ttf");
+  font-weight: $font-weight-regular;
+  font-style: italic;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src: url($font-path + "work-sans-regular.ttf") format("ttf");
+  font-weight: $font-weight-regular;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src: url($font-path + "work-sans-medium.ttf") format("ttf");
+  font-weight: $font-weight-medium;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src: url($font-path + "work-sans-semibold.ttf") format("ttf");
+  font-weight: $font-weight-semibold;
+  font-style: normal;
+  font-stretch: normal;
+}
