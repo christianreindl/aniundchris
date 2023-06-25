@@ -1,8 +1,8 @@
 /* Colors */
 
 $theme-default: (
-  background: #dac1b3,
-  ui: #b13710,
+  background: #e6d7d2,
+  ui: #ce3d0e,
   accent: #ffffff,
 );
 
@@ -10,7 +10,7 @@ $color-black: #000000;
 
 /* Font */
 $font-family-base: "GT Alpina", "Baskerville", "Caslon", serif;
-$font-family-alt: "Work Sans", sans-serif;
+$font-family-alt: "Inter", sans-serif;
 $font-family-decoration: "Libre Baskerville", "Baskerville", "Caslon",
   "Garamond", serif;
 
@@ -49,7 +49,7 @@ $font-size-paragraph-xxsmall: (
 );
 
 $font-size-main-button: (
-  null: 2.5rem,
+  null: 1.75rem,
   md: 2.5rem,
 );
 
@@ -74,7 +74,7 @@ $line-height-paragraph-large: 1.333333;
 $font-weight-light: 300;
 $font-weight-regular: 400;
 $font-weight-medium: 500;
-$font-weight-semibold: 600;
+$font-weight-semibold: 500;
 $font-weight-bold: 800;
 
 /* Component Sizing */

@@ -34,14 +34,14 @@ window.addEventListener("scroll", function () {
 window.addEventListener("scroll", function () {
   requestAnimationFrame(function () {
     const scrollY = window.scrollY;
-    const windowCenter = window.innerHeight * 0.5;
+    const windowCenter = window.innerHeight * 0.67;
     const totalHeight = document.body.scrollHeight;
     const scribblePathLength = 8134;
 
     const scrollPercent = (scrollY + windowCenter) / totalHeight;
     // 0 = 0
     // 5000 = 8134
-    const strokeDashoffset = scrollPercent * -scribblePathLength;
+    const strokeDashoffset = scrollPercent * scribblePathLength;
 
     scribblePath.style.strokeDashoffset = strokeDashoffset;
 

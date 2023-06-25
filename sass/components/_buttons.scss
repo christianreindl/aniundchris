@@ -327,9 +327,8 @@
   }
 
   &:hover {
-    &::before {
-      opacity: 0.2;
-    }
+    background: var(--color-ui);
+    color: var(--color-background);
   }
 
   &:active {

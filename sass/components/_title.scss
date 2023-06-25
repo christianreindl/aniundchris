@@ -3,7 +3,7 @@
   position: relative;
   text-align: center;
   margin: 0 auto;
-  margin-top: 10vw;
+  margin-top: 30vh;
 
   @include media-breakpoint-up(md) {
     margin-top: 20vw;
@@ -67,6 +67,22 @@
   }
 }
 
+.mobile-only {
+  display: block;
+
+  @include media-breakpoint-up(md) {
+    display: none;
+  }
+}
+
+.desktop-only {
+  display: none !important;
+
+  @include media-breakpoint-up(md) {
+    display: block !important;
+  }
+}
+
 $button-animation-base-duration: 0.25s;
 $button-animation-base-delay: 0.1s;
 $button-animation-additional-delay: 0.1s;
@@ -75,7 +91,7 @@ $button-animation-additional-delay: 0.1s;
   width: 100%;
   max-width: 28rem;
   margin-top: 3rem;
-  height: 7rem;
+  height: 6rem;
   display: flex;
   text-decoration: none;
   align-items: center;
@@ -203,6 +219,11 @@ $button-animation-additional-delay: 0.1s;
 
   @include media-breakpoint-up(md) {
     width: 50%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  @include media-breakpoint-up(lg) {
     padding-left: 4rem;
     padding-right: 4rem;
   }
@@ -235,6 +256,20 @@ $button-animation-additional-delay: 0.1s;
   .content__link {
     margin-top: 0.5rem;
   }
+}
+
+.content__suggestion__title {
+  display: flex;
+  align-items: baseline;
+  margin-top: 1rem;
+
+  .content__title {
+    margin-right: 0.25em;
+  }
+}
+
+.schedule__time {
+  margin-bottom: 1rem;
 }
 
 .schedule__redacted {
@@ -288,6 +323,7 @@ $button-animation-additional-delay: 0.1s;
   @include media-breakpoint-up(md) {
     width: 10rem;
     height: 10rem;
+    display: flex !important;
   }
 }
 
@@ -380,17 +416,22 @@ $scribble-path-length: 8134;
   margin-top: 15vh;
   mix-blend-mode: multiply;
   display: flex;
-  align-items: center;
-  opacity: 0.75;
-  width: 100%;
+  align-items: flex-start;
+  opacity: 1;
   overflow: hidden;
+  width: 100%;
 
+  @include media-breakpoint-up(md) {
+    width: auto;
+  }
   svg {
-    height: 100%;
+    width: 200%;
     margin: 0 auto;
 
     @include media-breakpoint-up(md) {
-      opacity: 0.66;
+      width: auto;
+      height: 100%;
+      opacity: 1;
       max-width: 75vw;
     }
   }
