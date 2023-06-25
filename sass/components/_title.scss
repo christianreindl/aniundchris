@@ -387,6 +387,7 @@ $scribble-path-length: 8134;
 
   svg {
     height: 100%;
+    margin: 0 auto;
 
     @include media-breakpoint-up(md) {
       opacity: 0.66;
