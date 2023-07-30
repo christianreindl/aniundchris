@@ -293,9 +293,21 @@ $button-animation-additional-delay: 0.1s;
 .parking {
 }
 
-.lodging {
+.food {
   @include media-breakpoint-up(md) {
     margin-top: 20rem;
+  }
+}
+
+.dogs {
+  @include media-breakpoint-up(md) {
+    margin-top: -2rem;
+  }
+}
+
+.lodging {
+  @include media-breakpoint-up(md) {
+    margin-top: 5rem;
   }
 }
 
@@ -320,10 +332,14 @@ $button-animation-additional-delay: 0.1s;
   transition: all 0.15s ease;
   z-index: 5;
 
+  display: none;
+
   @include media-breakpoint-up(md) {
     width: 10rem;
     height: 10rem;
     display: flex !important;
+
+    display: none !important;
   }
 }
 
